@@ -1,0 +1,1 @@
+2025-10-15 01:05:24.050 | INFO     | agents.analyzer_agent:__init__:26 - Loading LLM mistralai/Mistral-7B-Instruct-v0.2 on device -1

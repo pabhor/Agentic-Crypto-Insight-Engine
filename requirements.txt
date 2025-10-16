@@ -1,0 +1,32 @@
+# Core
+python-dotenv
+requests
+feedparser
+beautifulsoup4
+newspaper3k
+fastapi
+uvicorn
+pydantic
+loguru
+
+# NLP & Models
+sentence-transformers>=2.2.2
+transformers>=4.35.0
+accelerate
+torch>=2.0.0
+tokenizers
+langchain>=0.0.300
+chromadb>=0.3.30
+faiss-cpu>=1.7.4   # faiss-gpu if using GPU nodes
+sentencepiece
+datasets
+
+# Streamlit
+streamlit
+
+# Optional / utils
+psycopg2-binary  # for Postgres
+redis
+httpx
+pytest
+black

@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    volumes:
+      - ./:/app
+    environment:
+      - LLM_MODEL=HuggingFaceH4/zephyr-7b-alpha
+      - EMBED_MODEL=sentence-transformers/all-mpnet-base-v2
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 8G
+  streamlit:
+    image: python:3.10-slim
+    command: streamlit run dashboard/streamlit_app.py --server.port 8501
+    volumes:
+      - ./:/app
+    ports:
+      - "8501:8501"

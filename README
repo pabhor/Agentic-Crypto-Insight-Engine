@@ -1,0 +1,20 @@
+# Agentic AI Crypto Market Insight Engine
+
+## Overview
+Agentic AI Crypto Market Insight Engine autonomously scrapes cryptocurrency news, processes and embeds articles, runs reasoning-based LLM analysis (not simple polarity), aggregates insights, and serves a Streamlit dashboard and API.
+
+Key components:
+- ScraperAgent (RSS + articles)
+- PreprocessAgent (clean & dedupe)
+- EmbedAgent (SentenceTransformers + Chroma)
+- AnalyzerAgent (LLM-based reasoning)
+- InsightAgent (aggregation)
+- ReporterAgent (persisting reports)
+- Streamlit dashboard (visualization)
+
+## Quickstart
+1. Create virtualenv and install requirements:
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
